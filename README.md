@@ -1,0 +1,48 @@
+![OTP Manager](public/icons/icon_128.png)
+# OTP Manager
+### A simple OTP manager extension for Chrome
+
+## Features
+- Securely stores your OTP secrets in Chrome's storage
+- Login to your OTP-protected accounts with just two clicks
+- Uses encryption and the Web Credential Management API to keep your secrets safe
+
+## Installation
+1) download the latest release from the [releases page]()
+2) unzip the file
+3) open the [extensions page](chrome://extensions)
+4) enable developer mode
+5) click "load unpacked" and select the unzipped folder
+6) pin the extension to your toolbar
+
+## Usage
+### Adding a new OTP secret
+1) click the OTP-Manager extension icon
+2) click the "Add new" button and follow the instructions
+
+### Logging in to an OTP-protected account
+1) When prompted to enter a OTP code, click the OTP-Manager extension icon
+2) Select OTP Manager from the list of available credentials
+
+For some websites, you may need to click into the OTP field before clicking the extension icon.
+
+## Security
+### How are my secrets stored?
+On first launch, OTP Manager generates a ```AES-GCM``` key and stores it in the extension's storage.
+This key is used to encrypt your secrets before they are stored on the page itself using the Web Credential API. 
+The key is never stored in plaintext, and is only accessible to the extension itself when the user invokes the extension and selects the identity.
+
+### How are my secrets transmitted?
+When the user invokes the extension to generate a OTP token, the extension request the encrypted secret from the page.
+To fulfill this request, the user has to confirm by selecting the OTP Manager identity from the list of available credentials.
+Then, the extension decrypts the secret and generates the OTP token, which is then sent back to the page. 
+None of your secrets are sent to any third party servers, and the extension only communicates with the page itself.
+
+## License
+This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
+
+## Development
+1) clone the repository
+2) run ```npm install```
+3) run ```npm run build``` to build the extension
+4) add the extension to chrome by following the instructions in the [installation](#installation) section. After each new build, you will have to reload the extension on the ```chrome://extensions``` page
