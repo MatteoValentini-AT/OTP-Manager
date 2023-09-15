@@ -1,5 +1,5 @@
 ![OTP Manager](public/img/banner.png)
-### A simple OTP manager extension for Chrome
+#### A simple OTP manager extension for Chrome
 
 ## Features
 - Securely stores your OTP secrets in Chrome's storage
