@@ -79,7 +79,7 @@ const AddToken = (props: {
                                 id: 'OTP Manager',
                                 password: encryptedSecret,
                                 name: 'OTP Manager',
-                                iconURL: 'https://matteovalentini.at/serve/totp_tool_icon.png'
+                                iconURL: 'https://static.matteovalentini.at/cdn/software/otpmanager/icon.png'
                             })).then(() => {
                                 chrome.runtime.sendMessage({type: 'generateOTP', secret: encryptedSecret, submit: false});
                             }).catch((e) => {
