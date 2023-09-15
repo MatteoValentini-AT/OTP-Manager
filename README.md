@@ -8,7 +8,7 @@
 - Uses encryption and the Web Credential Management API to keep your secrets safe
 
 ## Installation
-1) download the latest release from the [releases page]()
+1) download the latest release from the [releases page](https://github.com/MatteoValentini-AT/OTP-Manager/releases/download/v1.0.0/OTP-Manager.zip)
 2) unzip the file
 3) open the [extensions page](chrome://extensions)
 4) enable developer mode
