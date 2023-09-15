@@ -1,14 +1,11 @@
-![OTP Manager](public/icons/icon_128.png)
-# OTP Manager
-### A simple OTP manager extension for Chrome
-
+![OTP Manager](public/img/banner.png)
 ## Features
 - Securely stores your OTP secrets in Chrome's storage
 - Login to your OTP-protected accounts with just two clicks
 - Uses encryption and the Web Credential Management API to keep your secrets safe
 
 ## Installation
-1) download the latest release from the [releases page]()
+1) download the latest release from the [releases page](https://github.com/MatteoValentini-AT/OTP-Manager/releases/download/v1.0.0/OTP-Manager.zip)
 2) unzip the file
 3) open the [extensions page](chrome://extensions)
 4) enable developer mode
