@@ -1,5 +1,4 @@
-![OTP Manager](public/icons/icon_128.png)
-# OTP Manager
+![OTP Manager](public/img/banner.png)
 ### A simple OTP manager extension for Chrome
 
 ## Features
