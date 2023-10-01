@@ -36,7 +36,7 @@ Then, the extension decrypts the secret and generates the OTP token, which is th
 None of your secrets are sent to any third party servers, and the extension only communicates with the page itself.
 
 ## License
-This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Development
 1) clone the repository
