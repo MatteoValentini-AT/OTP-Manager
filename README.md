@@ -5,7 +5,7 @@
 - Uses encryption and the Web Credential Management API to keep your secrets safe
 
 ## Installation
-1) download the latest release from the [releases page](https://github.com/MatteoValentini-AT/OTP-Manager/releases/download/v1.0.0/OTP-Manager.zip)
+1) download the latest [release]([https://github.com/MatteoValentini-AT/OTP-Manager/releases/](https://github.com/MatteoValentini-AT/OTP-Manager/releases/download/v1.0.1/OTP.Manager.v1.0.1.zip)
 2) unzip the file
 3) open the [extensions page](chrome://extensions)
 4) enable developer mode
@@ -22,6 +22,13 @@
 2) Select OTP Manager from the list of available credentials
 
 For some websites, you may need to click into the OTP field before clicking the extension icon.
+
+## Upgrading
+
+Currently, the extension does **not** update itself. After a new [release](https://github.com/MatteoValentini-AT/OTP-Manager/releases/) is published, follow the following steps:
+1) close all instaces of chrome
+2) extract the downloaded zip and replace all extension files with the new ones
+3) start chrome, all your data will still be persisted
 
 ## Security
 ### How are my secrets stored?
