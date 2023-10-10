@@ -5,12 +5,7 @@
 - Uses encryption and the Web Credential Management API to keep your secrets safe
 
 ## Installation
-1) download the latest [release](https://github.com/MatteoValentini-AT/OTP-Manager/releases/download/v1.0.1/OTP.Manager.v1.0.1.zip)
-2) unzip the file
-3) open the [extensions page](chrome://extensions)
-4) enable developer mode
-5) click "load unpacked" and select the unzipped folder
-6) pin the extension to your toolbar
+The extensions has finally been published to the chrome webstore: [OTP Manager](https://chrome.google.com/webstore/detail/otp-manager/kcklbnhgmakljefhgekeafnmkimmjbcj)
 
 ## Usage
 ### Adding a new OTP secret
@@ -22,13 +17,6 @@
 2) Select OTP Manager from the list of available credentials
 
 For some websites, you may need to click into the OTP field before clicking the extension icon.
-
-## Upgrading
-
-Currently, the extension does **not** update itself. After a new [release](https://github.com/MatteoValentini-AT/OTP-Manager/releases/) is published, follow the following steps:
-1) close all instaces of chrome
-2) extract the downloaded zip and replace all extension files with the new ones
-3) start chrome, all your data will still be persisted
 
 ## Security
 ### How are my secrets stored?
@@ -49,4 +37,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 1) clone the repository
 2) run ```npm install```
 3) run ```npm run build``` to build the extension
-4) add the extension to chrome by following the instructions in the [installation](#installation) section. After each new build, you will have to reload the extension on the ```chrome://extensions``` page
+4) open the [extensions page](chrome://extensions) in chrome
+5) enable developer mode
+6) click "load unpacked" and select the ```build``` folder
+
+After each rebuild, you have to reload the extension on the [extensions page](chrome://extensions)
