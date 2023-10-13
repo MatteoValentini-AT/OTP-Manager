@@ -31,12 +31,7 @@ const App = () => {
 				return;
 			}
 			const tokens = (await chrome.storage.sync.get(['tokens'])).tokens;
-            if (tokens === undefined) {
-                setShowContent(true);
-                setPage(0);
-                return;
-            }
-			const token = tokens.find((token: any) => url.startsWith(token.url));
+			const token = tokens ? tokens.find((token: any) => url.startsWith(token.url)) : undefined;
 			if (token)
 				signIn(token, tabs[0].id as number);
 			else if (url) {

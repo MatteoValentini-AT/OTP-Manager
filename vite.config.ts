@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
     build: {
         outDir: 'build',
-        minify: 'esbuild',
-        cssMinify: 'esbuild',
+        minify: false,
+        //cssMinify: 'esbuild',
         rollupOptions: {
             input: {
                 background: 'src/background.js',

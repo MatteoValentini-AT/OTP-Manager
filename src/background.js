@@ -71,6 +71,7 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
                         const element = target.startsWith('#') ? document.getElementById(target.substring(1)) : document.getElementsByTagName(target.substring(1))[0];
                         element.focus();
                         element.select();
+                        element.dispatchEvent(new Event('click'));
                         element.dispatchEvent(new InputEvent('input', {
                             inputType: 'insertText',
                             data: otp,

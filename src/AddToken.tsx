@@ -146,10 +146,10 @@ const AddToken = (props: {
 		if (progress == 1) {
 			const pageURL = new URL('https://' + page.replaceAll('sso.', ''));
 			const icon = 'https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://' + pageURL.hostname + '/&size=64';
-			selectElement().then((result) => {
+			selectElement().then(async (result) => {
 				setProgress(progress + 1);
 				setTarget(result as string);
-				chrome.storage.local.set({
+				await chrome.storage.local.set({
 					['addToken']: {
 						page: page,
 						target: result,
@@ -157,7 +157,6 @@ const AddToken = (props: {
 						progress: 3
 					}
 				});
-				setPageIcon(icon);
 			});
 		}
 		if (progress < 3) setProgress(progress + 1)

@@ -16,6 +16,8 @@ const TokenList = (props: {
 					setCanAdd(false);
 					return;
 				}
+                if (result['tokens'] == undefined)
+                    return;
 				const url = tabs[0].url?.replace('https://', '').replace('http://', '').replace('www.', '');
 				result['tokens'].forEach((token: any) => {
 					if (url && url.startsWith(token.url)) {
