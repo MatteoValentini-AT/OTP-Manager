@@ -98,3 +98,5 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
         console.log(request.message);
     }
 });
+
+getKey().then(() => console.log('Startup completed'));

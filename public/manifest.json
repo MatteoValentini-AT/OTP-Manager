@@ -1,7 +1,7 @@
 {
   "name": "OTP Manager",
   "description": "A simple OTP manager extension for Chrome",
-  "version": "1.0.3",
+  "version": "1.0.4",
     "manifest_version": 3,
   "action": {
     "default_popup": "index.html",
